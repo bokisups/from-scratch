@@ -1,0 +1,59 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header {
+    position: fixed;
+    width: 300px;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(224, 224, 224, 0.7);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgb(255, 255, 255,0.7);
+    padding: 0 20;
+}
+#header .profile img {
+
+ border-radius: 50%;
+ width: 400px;
+ border: 20px solid rgba(255, 255, 255, 0.25);
+    margin: 20 auto;
+    box-sizing: border-box;
+}
+
+#nameforname {
+    box-sizing: border-box;
+    font-size: 50px;
+    color: #008697;
+    padding-bottom: 50px;
+}
+#smallname {
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+
+#navbar li{
+    
+    background-color: rgb(255, 255, 255,0.3);
+    list-style: none;
+    padding: 10px;
+    height: 15px;
+    margin-top: 8px;
+
+}
+#navbar li:hover{
+    background: rgb(255, 255, 255);
+
+}
+
+#navbar a {
+    text-decoration: none;
+    color: rgb(0, 88, 122)
+}
+
+.portfolio {
+    background-image: linear-gradient(25deg, #008697 30%, #00d4ff 100%);
+    height: 100vh;
+}
