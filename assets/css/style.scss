@@ -1,0 +1,86 @@
+@mixin image_frame {
+    height: 400px;
+    width: 200px;
+    border: 4px solid rgba($color: #ffffff, $alpha: 0.6);
+
+}
+body{    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+        
+
+/*:::::::::::::::::::::HEADER:::::::::::::::::::*/
+        #header {
+            position: fixed;
+            width: 300px;
+            top: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 60% 30%, rgba(4,13,18,1) 0%, rgba(24,61,61,1) 100%);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgb(255, 255, 255,0.7);
+            padding: 0 20;
+
+                .profile img {
+                    border-radius: 50%;
+                    width: 350px;
+                    border: 20px solid rgba(255, 255, 255, 0.25);
+                    margin-top: 30px;
+                }
+                #nameforname {
+                    margin-top: 0;
+                    font-size: 50px;
+                    color: #93B1A6;
+                }
+                #smallname {
+                    position: relative;
+                    top: 20px;
+                    left: 100px;
+                    margin-bottom: 0;
+                    color: #93B1A6;
+                }
+                /*-----------NAVBAR*/
+                #navbar {
+                    li{
+                        background-color: rgba(255, 255, 255, 0.541);
+                        list-style: none;
+                        padding: 10px;
+                        height: 15px;
+                        margin-top: 8px;
+                        &:hover{
+                            background-color: rgb(255, 255, 255);
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #183D3D;
+                        }
+                }
+            }
+        }
+
+/*:::::::::::::::::::::PORTFOLIO:::::::::::::::::::*/
+#portfolio_area {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    z-index: -1;
+    border: 5px solid black;
+    height: 100vh;
+    width: 80vw;
+    background-color: #5C8374;
+
+        .portfolio_frame{
+            @include image_frame();
+
+                img{
+                   width: 100%;
+                   height: 100%;
+                   object-view-box: inset(10% 30% 40%);
+                   transform: scale(0.85);
+                   object-fit: fill;
+
+                }
+        }
+}
+
+    
